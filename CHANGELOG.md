@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Organized project structure with dedicated directories for standards and templates
 
-## [0.1.0] - YYYY-MM-DD
+## [0.1.0] - 2025-04-17
 ### Added
 - Initial repository structure
 - Basic README with project overview
@@ -26,5 +26,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Contributing guidelines
 - Conventional commits standard
 
-[Unreleased]: https://github.com/your-org/docs/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/your-org/docs/releases/tag/v0.1.0 
+[Unreleased]: https://github.com/michaelgrilo/dti/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/michaelgrilo/dti/releases/tag/v0.1.0

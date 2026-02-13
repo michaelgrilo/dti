@@ -4,9 +4,9 @@ This template project demonstrates documentation and organization best practices
 📚 Standardized docs structure | 🎯 Clear project goals | 🔄 Define-Test-Implement (DTI) workflow guidelines | 🛠 Development setup | 📈 Project roadmap
 
 ## Project Status
-🚀 Template Project v0.1.0 | Status: Active | Last Updated: YYYY-MM-DD
+🚀 Template Project v0.1.0 | Status: Active | Last Updated: <YYYY-MM-DD>
 
-**Quick Links:** [Latest Release](./CHANGELOG.md) | [Known Issues](./ISSUES.md) | [Contributing](./CONTRIBUTING.md) | [Doc Standards](./DOCUMENTATION_STANDARDS.md) | [Methodology](./docs/methodology.md)
+**Quick Links:** [Latest Release](../CHANGELOG.md) | [Contributing](../standards/contributing.md) | [Doc Standards](../standards/documentation.md) | [Methodology](../standards/methodology.md)
 
 **Health:** Documentation (⭐⭐⭐⭐☆ 80%) | Tests (⭐⭐⭐☆☆ 60%) | Code Quality (⭐⭐⭐⭐☆ 85%)
 
@@ -18,7 +18,7 @@ This template project demonstrates documentation and organization best practices
 
 ## Setup
 **Prerequisites:** Git, Code editor, Project-specific tools
-**Getting Started:** Clone repo → Install deps → Follow README.md → Review /docs
+**Getting Started:** Clone repo → Install deps → Follow README.md → Review /standards
 
 ## Project Structure
 ```

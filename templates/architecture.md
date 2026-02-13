@@ -10,7 +10,7 @@
 - No implementation without corresponding tests
 - Tests should describe behavior through clear naming
 - Each component requires comprehensive test coverage
-- Follow Define-Test-Implement (DTI) principles (see docs/methodology.md)
+- Follow Define-Test-Implement (DTI) principles (see ../standards/methodology.md)
 
 ## Layers Overview
 - **Core**: Foundation layer handling core business logic and data management

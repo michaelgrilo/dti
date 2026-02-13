@@ -1,7 +1,7 @@
 # Define-Test-Implement Documentation Toolkit
 
-[![CI Status](https://img.shields.io/badge/CI-coming_soon-lightgrey)](https://github.com/your-org/docs)
-[![Documentation](https://img.shields.io/badge/docs-MkDocs-blue)](https://your-org.github.io/docs)
+[![Docs Quality](https://github.com/michaelgrilo/dti/actions/workflows/docs-quality.yml/badge.svg)](https://github.com/michaelgrilo/dti/actions/workflows/docs-quality.yml)
+[![Documentation](https://img.shields.io/badge/docs-standards-blue)](standards/documentation.md)
 
 A comprehensive documentation toolkit providing standards, templates, and guidelines for maintaining high-quality project documentation for AI-assisted development.
 
@@ -85,4 +85,4 @@ See [CHANGELOG.md](CHANGELOG.md) for a list of notable changes.
 
 ## License
 
-[Add appropriate license information here] 
+This project is currently unlicensed. Add a `LICENSE` file to define reuse terms.
