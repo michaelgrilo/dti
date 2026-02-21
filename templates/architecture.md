@@ -10,7 +10,7 @@
 - No implementation without corresponding tests
 - Tests should describe behavior through clear naming
 - Each component requires comprehensive test coverage
-- Follow Define-Test-Implement (DTI) principles (see ../standards/methodology.md)
+- Follow [Define-Test-Implement (DTI) principles](../standards/methodology.md)
 
 ## Layers Overview
 - **Core**: Foundation layer handling core business logic and data management
@@ -138,7 +138,7 @@ All tests are written during the Test phase of DTI.
 - Performance considerations
 - Security measures
 - Deployment guidelines
-- Link back to methodology.md where relevant
+- Link back to the [DTI workflow](../standards/methodology.md) where relevant
 
 *Each component must have:*
 - Comprehensive test coverage

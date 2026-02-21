@@ -1,95 +1,59 @@
-# TODO List
+# TODO List: [Project Name]
 
 ## Current Status
-- ✅ Created initial architecture documentation
-- ✅ Defined development flow and implementation guidelines
-- ✅ Established testing strategy
-- ✅ Outlined module structure
+
+- ✅ [Completed milestone 1]
+- ✅ [Completed milestone 2]
+- 🔄 [In-progress milestone]
 
 ## Next Steps
 
-### 1. Project Setup
-- [ ] Initialize project with basic directory structure
-- [ ] Set up dependency management
-- [ ] Configure initial CI/CD pipeline
-- [ ] Set up linting and code formatting tools
-- [ ] Create initial README.md with setup instructions
+Each work item below should follow the DTI loop: write a [Definition](./define.md), derive a [Test Plan](./test-plan.md), then implement until tests pass.
 
-### 2. Core Implementation
-- [ ] Define core data structures and interfaces
-- [ ] Create initial test suites for core components
-- [ ] Implement data layer foundations
-- [ ] Set up database connections and models
-- [ ] Implement basic service layer
+### 1. [Work Area]
 
-### 3. Testing Infrastructure
-- [ ] Set up unit testing framework
-- [ ] Configure integration testing environment
-- [ ] Set up E2E testing tools
-- [ ] Create test data generators
-- [ ] Implement CI test automation
+- [ ] [Task — phrase as a concrete deliverable]
+- [ ] [Task]
+- [ ] [Task]
 
-### 4. API Development
-- [ ] Define API endpoints and contracts
-- [ ] Create API documentation
-- [ ] Implement basic controllers
-- [ ] Set up middleware infrastructure
-- [ ] Implement input validation
+### 2. [Work Area]
 
-### 5. Security Implementation
-- [ ] Set up authentication system
-- [ ] Implement authorization rules
-- [ ] Configure security middleware
-- [ ] Set up rate limiting
-- [ ] Implement input sanitization
+- [ ] [Task]
+- [ ] [Task]
+- [ ] [Task]
 
-### 6. Documentation
-- [ ] Create API documentation
-- [ ] Write development guides
-- [ ] Document setup procedures
-- [ ] Create contribution guidelines
-- [ ] Document testing procedures
+### 3. [Work Area]
 
-### 7. Performance & Monitoring
-- [ ] Set up logging infrastructure
-- [ ] Implement performance monitoring
-- [ ] Create benchmark suite
-- [ ] Set up error tracking
-- [ ] Implement health checks
-
-### 8. Deployment
-- [ ] Create deployment scripts
-- [ ] Set up staging environment
-- [ ] Configure production environment
-- [ ] Document deployment procedures
-- [ ] Create rollback procedures
+- [ ] [Task]
+- [ ] [Task]
+- [ ] [Task]
 
 ## Priority Items
-1. Project initialization and basic setup
-2. Core data structure implementation
-3. Basic test infrastructure
-4. Initial API endpoints
-5. Security fundamentals
 
-## Notes
-- All new features should follow the DTI (Define-Test-Implement) methodology outlined in methodology.md
-- Each component requires full test coverage (written during the Test phase)
-- Documentation should be updated alongside code changes
-- Security considerations should be addressed at each step
-- Performance benchmarks should be established early
+1. [Highest-priority item and why]
+2. [Next priority]
+3. [Next priority]
 
-## Questions to Address
-- [ ] Specific database technology selection
-- [ ] Authentication strategy
-- [ ] Caching implementation details
-- [ ] Monitoring tool selection
-- [ ] Production hosting environment
+## Open Questions
+
+Decisions that are blocking or could change the direction of upcoming work.
+
+- [ ] [Question 1]
+- [ ] [Question 2]
 
 ## Future Considerations
-- Scalability requirements
-- Backup and disaster recovery
-- International support
-- Mobile API considerations
-- Analytics integration
 
-*Remember: Follow the DTI methodology in methodology.md for all new development.* 
+Items that are out of scope now but should be revisited later.
+
+- [Consideration 1]
+- [Consideration 2]
+
+## Notes
+
+- All new features should follow the [DTI methodology](../standards/methodology.md).
+- Each work item needs a Definition artifact before tests are written.
+- Documentation should be updated alongside code changes.
+
+---
+
+*See [DTI Methodology](../standards/methodology.md) for the full workflow.*

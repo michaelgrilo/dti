@@ -1,51 +1,57 @@
-# Overview
+# [Project Name] Overview
 
-This template project demonstrates documentation and organization best practices, providing:
-📚 Standardized docs structure | 🎯 Clear project goals | 🔄 Define-Test-Implement (DTI) workflow guidelines | 🛠 Development setup | 📈 Project roadmap
+[One-sentence summary of what this project does and who it's for.]
 
 ## Project Status
-🚀 Template Project v0.1.0 | Status: Active | Last Updated: <YYYY-MM-DD>
+
+**Version:** [x.y.z] | **Status:** [Active / Beta / Maintenance] | **Last Updated:** [YYYY-MM-DD]
 
 **Quick Links:** [Latest Release](../CHANGELOG.md) | [Contributing](../standards/contributing.md) | [Doc Standards](../standards/documentation.md) | [Methodology](../standards/methodology.md)
 
-**Health:** Documentation (⭐⭐⭐⭐☆ 80%) | Tests (⭐⭐⭐☆☆ 60%) | Code Quality (⭐⭐⭐⭐☆ 85%)
-
 ## Project Goals
-- Provide consistent documentation structure
-- Enable better project management
-- Facilitate team onboarding
-- Maintain clear roadmap
+
+- [Goal 1 — what problem does this solve?]
+- [Goal 2]
+- [Goal 3]
 
 ## Setup
-**Prerequisites:** Git, Code editor, Project-specific tools
-**Getting Started:** Clone repo → Install deps → Follow README.md → Review /standards
+
+**Prerequisites:** [Runtime, tools, and versions required]
+
+**Getting Started:** Clone repo → Install dependencies → [Next step] → [Next step]
+
+For detailed instructions, see the [Setup Guide](./setup.md).
 
 ## Project Structure
+
 ```
-/docs     - Project documentation (overview.md, architecture.md, api.md, methodology.md, etc.)
-/src      - Source code (core/, utils/, types/, config/)
-/tests    - Test files (unit/, integration/)
-/scripts  - Build and utility scripts
+[root]/
+├── [directory]   - [purpose]
+├── [directory]   - [purpose]
+├── [directory]   - [purpose]
+└── [directory]   - [purpose]
 ```
 
-## High Priority Features
-**Documentation:**
-- [ ] Unified onboarding guide
-- [ ] Standardized documentation templates
-- [ ] Documentation format guidelines
-- [ ] Milestone-documentation alignment process
+## Development Workflow
+
+This project follows the [Define-Test-Implement (DTI) methodology](../standards/methodology.md):
+
+1. **Define** — write requirements using the [Definition template](./define.md)
+2. **Test** — derive test cases using the [Test Plan template](./test-plan.md)
+3. **Implement** — write code until tests pass, then refactor
 
 ## Roadmap
-### v0.2.0 - Documentation Standardization
-- Establish reusable documentation formats
-- Create comprehensive style guide
-- Develop unified onboarding guide
-- Set up documentation templates (overview.md, architecture.md, API docs)
 
-### v0.3.0 - Documentation Automation & Integration
-- Documentation validation
-- Automated TOC generation
-- Documentation testing
-- CI/CD integration for documentation updates
+### [Next Version] — [Theme]
 
-*Note: Customize this template based on your project needs.*
+- [Planned deliverable]
+- [Planned deliverable]
+
+### [Future Version] — [Theme]
+
+- [Planned deliverable]
+- [Planned deliverable]
+
+---
+
+*Customize this template based on your project's needs. See [DTI Methodology](../standards/methodology.md) for the full workflow.*

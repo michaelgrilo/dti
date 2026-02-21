@@ -1,82 +1,60 @@
-# Define-Test-Implement (DTI) Design Philosophy for AI-Assisted Development
+# Define-Test-Implement (DTI) Methodology
 
-## Introduction
+This is the canonical source for DTI workflow rules in this repository. If any other document
+conflicts with this file, this file is the source of truth.
 
-**Define-Test-Implement (DTI)** is a structured workflow that guides developers—especially AI-assisted beginners—from idea to working code in three clear phases:
+## Purpose
 
-1. **Define** ✅ – write down exactly what you need to build
-2. **Test** 🧪 – write automated tests from your definition checklist
-3. **Implement** ⚙️ – write the minimum code needed to make your tests pass
+DTI separates three concerns so humans and AI assistants stay aligned:
 
-By separating concerns this way, DTI lowers cognitive load, keeps AI tools on track, and yields modular, maintainable software.
+1. `Define`: decide exactly what should happen.
+2. `Test`: encode that definition as executable checks.
+3. `Implement`: write the minimum code to satisfy those checks.
 
-## The DTI Workflow
+## Workflow Summary
 
-### Phase 1 – Define ✅
+| Phase | Goal | Required Artifact(s) | Exit Criteria |
+|:------|:-----|:---------------------|:--------------|
+| Define | Turn an idea into explicit requirements | `define.md` | Inputs/outputs/rules are clear, success criteria are testable, and open questions are resolved |
+| Test | Translate requirements into tests | `test-plan.md` plus failing tests | Every criterion maps to at least one test, and tests fail before implementation |
+| Implement | Make tests pass with minimal behavior | Implementation code and passing tests | All tests pass, then refactoring preserves behavior |
 
-*Write down exactly what your code needs to do.*
+## Phase Rules
 
-- Write a simple description of what the code should do, a checklist of what success looks like, or rough examples of how the code might be used.
-- List what goes into the code (inputs), what should come out (outputs), what must always be true (rules), and any unusual situations to handle (edge-cases).
-- Provide this definition to your AI assistant so it has a clear blueprint.
+### 1. Define
 
-### Phase 2 – Test 🧪
+- Produce a definition using `templates/define.md`.
+- Capture inputs, outputs, invariants, success criteria, and edge cases.
+- Keep success criteria observable and specific enough to test.
+- Do not write implementation code in this phase.
 
-*Write automated tests from the checklist you defined.*
+### 2. Test
 
-- Turn each item from your checklist into a specific test
-- Write tests that check both normal usage and edge cases
-- Use these tests to keep AI-generated code on track and catch mistakes early
+- Derive tests from the completed definition using `templates/test-plan.md`.
+- Map every success criterion and rule to named tests.
+- Include edge-case coverage from the definition.
+- Ensure tests are written and failing before implementation starts.
+- Do not write implementation code in this phase.
 
-### Phase 3 – Implement ⚙️
+### 3. Implement
 
-*Write code until your tests pass.*
+- Implement one failing test at a time, starting with the simplest.
+- Make the smallest change needed to pass the current test.
+- Do not add behavior that no test requires.
+- Refactor only after all tests pass, without changing behavior.
 
-- Make the smallest change needed to pass the next failing test
-- Ask your AI assistant to help write basic code structure
-- Check that AI suggestions pass your tests before moving on
-- Clean up the code only after all tests pass
+## PR Requirements
 
-## Benefits and Advantages
+Every PR should include or link to:
 
-| Benefit | How DTI Enables It |
-|:--------|-------------------|
-| **Reduce mental load** | Each phase isolates a single mental task. |
-| **Guide AI assistance** | Definitions + tests = explicit, machine-readable guidance. |
-| **Catch errors early** | Tests surface problems in AI output immediately. |
-| **Verify AI output** | Tests enforce correctness while AI speeds development. |
-| **Enforce modularity** | Tests create clear boundaries between components. |
-| **Track changes safely** | Tests serve as living documentation and catch regressions. |
-| **Enable evolution** | Clear definitions and tests guide safe codebase changes. |
+- A completed Definition artifact
+- A completed Test Plan artifact
+- Evidence that implementation follows the defined scope
 
-## Methodology Comparisons
+See `.github/pull_request_template.md` and `standards/contributing.md` for process details.
 
-| Methodology | Similarities to DTI | Key Differences | When to Choose |
-|:-----------|--------------------|--------------------|----------------|
-| **Test-Driven Development** | Writes tests first; iterative loop | Classical TDD skips explicit *Define* step; DTI formalizes design upfront. | Choose when you have clear requirements but want rigorous testing. |
-| **Design by Contract** | Specifies behavior before code | DbC uses formal pre/postconditions; DTI uses human-readable definitions + tests. | Choose when you need mathematical precision in interfaces. |
-| **Interface-Driven Dev.** | Starts with interface sketches | IDD focuses on APIs; DTI scales from functions to systems with mandatory tests. | Choose when building libraries or public APIs. |
+## Tooling
 
-## Getting Started
-
-### Initial Steps
-
-1. **Start Small**
-   - Begin with a simple function or component
-   - Practice the DTI cycle on manageable tasks
-
-2. **Use Templates**
-   - Create definition templates for common tasks
-   - Maintain a test checklist
-
-3. **Iterate and Refine**
-   - Review and improve your definitions
-   - Build a library of successful patterns
-
-## Conclusion
-
-DTI blends the best parts of design-first thinking and test-first rigor, giving AI-assisted beginners a repeatable recipe for quality code:
-
-> **Define → Test → Implement → Repeat**
-
-Adopt this loop and you'll stay in control of your project while letting AI handle the busywork—resulting in software that is clear, correct, and easy to grow.
+- Phase prompts: `prompt.md`
+- Artifact templates: `templates/define.md`, `templates/test-plan.md`
+- Structure check: `./scripts/check-dti.sh`
